@@ -1,0 +1,153 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+header{
+	background-color: #566c2b;
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+}
+header a{
+	color: #fff;
+}
+
+header ul{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+#logo{
+	margin:auto; 
+	font-size: 30px;
+}
+#menu li{
+	padding: 10px;
+}
+#social-links li{
+	padding: 10px;
+}
+#main{
+	display: flex;
+	
+}
+
+article{
+	padding: 10px;
+}
+aside img{
+	width: 100%;
+}
+aside ul a{
+	color:  #566c2b;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid gray;
+}
+aside ul{
+	padding: 0px	;
+	list-style: none;
+}
+aside{
+	padding: 10px;
+	flex: 0 0 20vw;
+	background-color: beige;
+}
+.services-container{
+	display: flex;
+	flex-wrap: wrap;
+	
+	justify-content: space-between;
+}
+.service-box{
+	border: 1px solid #eee;
+	flex-basis: 32%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	max-width: 370px;
+	margin-bottom: 15px;
+}
+.service-box p{
+	margin: 0 0 10px;
+}
+.service-box h3{
+	margin: 5px 0 10px;
+}
+.service-box img{
+	width: 100%;
+}
+footer{
+	background-color: #566c2b;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+.call-to-action {
+	align-self: flex-start;
+	margin-top: auto;
+	
+}
+.call-to-action a:hover{
+	background-color:transparent ;
+	color: gray;
+	border: 2px solid  gray;
+} 
+.call-to-action a{
+	color: #fff;
+	padding: 8px 13px;
+	background-color: gray;
+	display: block;
+	border: 2px solid transparent;
+}
+
+@media screen and (max-width:850px) {
+	.services-container{
+		flex-wrap: wrap;
+	}
+	.service-box{
+		
+		flex-basis: 481`%;
+		
+		}
+	aside{
+		
+		flex: 0 0 30vw;
+	}
+}
+@media screen and (max-width:600px) {
+	header{
+		flex-direction: column;
+	}
+	#logo{
+		order: -1;
+	}
+	#main{
+		flex-direction: column;
+	}
+	article{
+		order: -1;
+	}
+	.services-container{
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	h2{
+		text-align: center;
+	}
+}
